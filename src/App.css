@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  height: 100vh;
+}
+
+.iphone-view {
+  width: 375px; /* iPhone width */
+  height: 812px; /* iPhone height */
+  background: white;
+  border-radius: 40px; /* Rounded corners for phone-like appearance */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for phone effect */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc; /* Subtle border for a defined edge */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* Header with input fields */
+.header {
+  background: #0C38EF; /* Ocean blue */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input container for icon and text */
+.input-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  width: 90%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Icons for inputs */
+.input-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0077be;
+}
+
+/* Transport mode buttons */
+.transport-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.circular-button {
+  width: auto; /* Allow the button to adjust width based on content */
+  height: 40px;
+  padding: 0 15px; /* Add horizontal padding for better spacing */
+  border: none;
+  border-radius: 8px; /* Change to rounded rectangle */
+  background-color: #ffffff; /* Dark gray background */
+  color: rgb(255, 255, 255); /* White text */
+  font-size: 34px; /* Slightly smaller font size */
+  font-weight: bold; /* Bold text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.circular-button:hover {
+  background-color: #00ff44; /* Slightly lighter gray for hover effect */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+.map-container {
+  flex: 1;
+  background: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-placeholder {
+  width: 90%;
+  height: 90%;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Trip summary section */
+.trip-summary {
+  background: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.trip-summary p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between elements */
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between label and switch */
+}
+
+.toggle-label {
+  font-size: 14px;
+  color: #333; /* Label color */
+}
+
+.actions button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #2fcb7d;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.actions button:hover {
+  background-color: #28b06c;
+}
+
+/* Payment selection */
+.payment-selection {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.payment-selection label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.payment-selection input {
+  margin-right: 5px;
+}
+
+/* Route Details */
+.route-details {
+  margin-top: 15px;
+}
+
+.route-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.tags {
+  display: flex;
+  gap: 5px;
+}
+
+.payment-tag {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
